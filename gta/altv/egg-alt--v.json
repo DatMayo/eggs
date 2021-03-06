@@ -4,7 +4,7 @@
         "version": "PTDL_v1",
         "update_url": null
     },
-    "exported_at": "2021-03-06T05:10:18+01:00",
+    "exported_at": "2021-03-06T05:27:28+01:00",
     "name": "alt:V",
     "author": "parker@parkervcp.com",
     "description": "alt:V Multiplayer a third-party multiplayer modification for Grand Theft Auto: V",
@@ -18,7 +18,7 @@
         "files": "{\r\n    \"server.cfg\": {\r\n        \"parser\": \"file\",\r\n        \"find\": {\r\n            \"host:\": \"host: 0.0.0.0\",\r\n            \"port:\": \"port: {{server.build.default.port}}\",\r\n            \"password:\": \"password: {{server.build.env.PASSWORD}}\",\r\n            \"description:\": \"description: {{server.build.env.SERVER_DESC}}\"\r\n        }\r\n    }\r\n}",
         "startup": "{\r\n    \"done\": \"Server started\"\r\n}",
         "logs": "{}",
-        "stop": "^SIGKILL"
+        "stop": "^C"
     },
     "scripts": {
         "installation": {
@@ -39,7 +39,7 @@
         },
         {
             "name": "Which alt:V build to download",
-            "description": "The supported versions are release, rc, dev (default: release).\r\n\r\nIf you don't know what you are doing leave it on release",
+            "description": "The supported versions are release, rc, dev (default: release).\r\n\r\nIf you don't know what you are doing leave it on release. You need to reinstall your server, after changing this value!",
             "env_variable": "BUILD",
             "default_value": "release",
             "user_viewable": true,
